@@ -1,0 +1,3 @@
+[submodule "KnightOS"]
+	path = KnightOS
+	url = git@github.com:KnightOS/KnightOS
