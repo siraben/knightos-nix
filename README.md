@@ -14,12 +14,23 @@ merge.
 
 To compile and run KnightOS, clone this repository and navigate to it,
 then enter the Nix shell and type `runit`.  You'll need a network
-connection as the SDK fetches the libraries and kernel.
+connection as the SDK fetches the libraries and kernel.  After the
+packages are installed, you'll be in the debugger.  Enter `run` to run
+the emulator, then press F12 (fn + F12 on macOS) to turn the
+calculator on.
 
 ```shell
+$ git clone --recursive git@github.com:siraben/knightos-nix
+$ cd knightos-nix
 $ nix-shell
 
 [nix-shell]$ runit
+/var/folders/s1/sm71lqk553d1_f8drd3tz_5r0000gn/T/tmp.VHuZnLfXW8/knightos-nix/KnightOS
+Found existing project: KnightOS
+Installing SDK...
+-- snip --
+z80e-sdl --debug -d TI84p .knightos/debug.rom
+z80e [F:00:0x0000 JP 0x006B] > run
 ```
 
 This code is licensed under the MIT license.
