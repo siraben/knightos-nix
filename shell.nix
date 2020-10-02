@@ -23,4 +23,7 @@ mkShell {
       knightos-sdk
       knightos-z80e
   ];
+  shellHook = ''
+    alias runit="cd KnightOS && knightos init --platform=TI84p && make debug"
+  '';
 }
