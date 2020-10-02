@@ -13,9 +13,9 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ cmake ];
 
-  buildInputs = [ asciidoc libxslt.bin docbook_xsl ];
+  buildInputs = [ asciidoc libxslt docbook_xsl ];
 
-  hardeningDisable = [ "format" ];
+  hardeningDisable = [ "all" ];
 
   meta = with stdenv.lib; {
     homepage    = "https://knightos.org/";
