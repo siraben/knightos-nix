@@ -7,12 +7,12 @@ in
 python3Packages.buildPythonPackage rec {
 
   pname = "knightos-sdk";
-  version = "1.4.1";
+  version = "2.0.9";
   src = fetchFromGitHub {
     owner = "KnightOS";
     repo = "sdk";
-    rev = "9ac3e8f964c96cf16e13261848e3a24a8a80fe8e";
-    sha256 = "17sawhxg5251jbx4112ibh2a5cq61vk2bw9pp5ib4yn2156pc4hq";
+    rev = version;
+    sha256 = "0n4mg51ghajhb6yhr330xgcd1abf7xp89czvzxx3yfp42pa3vh31";
   };
 
   doCheck = false;

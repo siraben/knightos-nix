@@ -1,6 +1,6 @@
 # Compiling KnightOS end-to-end using Nix
 
-KnightOS is one of my favorite projects, a custom OS for many models
+[KnightOS](https://knightos.org/) is one of my favorite projects, a custom OS for many models
 of the TI calculator series.  It was the inspiration for my own custom
 Forth-based OS for the TI-84+
 ([zkeme80](https://github.com/siraben/zkeme80)).  Motivated by the
